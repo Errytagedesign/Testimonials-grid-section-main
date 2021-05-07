@@ -1,0 +1,212 @@
+*, 
+*:before, 
+*:after {
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+
+
+
+ body {
+
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+    color: hsl(210, 46%, 95%);
+    font-weight: 500;
+    
+}
+
+
+/* =====General Layout===== */
+
+.container {
+
+    width: 70%;
+    
+    margin: 7em auto;
+    display: grid;
+    grid-gap: 2.5em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+
+    "testimonial1 testimonial1 testimonial2 sidebar"
+    "testimonial3 testimonial4 testimonial4 sidebar"
+    
+    
+    
+    ;
+    
+} 
+
+
+article {
+
+    padding: 1.5em;
+    box-shadow: 15px 15px 18px 3px rgba(107, 107, 107, 0.15);
+    
+}
+
+
+
+
+
+img {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: hsla(0, 0%, 81%, .5) solid 4px;
+    margin-right: 1em;
+    
+
+}
+
+
+
+.testimonial1  {
+    
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-x: 80%;
+    background-color: hsl(263, 55%, 52%);
+    grid-area: testimonial1;
+    border-radius: 10px;
+    
+}
+
+.testimonial2  {
+    background-color: hsl(217, 19%, 35%);
+    grid-area: testimonial2;
+    border-radius: 10px;
+    
+
+}
+
+
+
+
+.sidebar  {
+    background-color: #fff;
+    color: hsl(219, 29%, 14%);
+    grid-area: sidebar;
+    border-radius: 10px;
+    
+}
+
+.testimonial3  {
+    background-color: #fff;
+    color: hsl(219, 29%, 14%);
+    grid-area: testimonial3;
+    border-radius: 10px;
+    
+}
+
+.testimonial4  {
+    background-color: hsl(219, 29%, 14%);
+    grid-area: testimonial4;
+    border-radius: 10px;
+   
+    
+}
+
+
+.user {
+
+    display: flex;
+    margin-top: 1em;
+    
+}
+
+
+
+
+
+
+/* =====Tyepography===== */
+
+.qoutes {
+
+    opacity: 0.7;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.8em;
+    margin-top: 1.5em;
+    
+}
+
+
+
+.grad {
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+h2 {
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding-top: 1em;
+}
+
+.username {
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: .8rem;
+}
+
+#jean, #kira {
+
+    opacity: 0.6;
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+
+
+    .container {
+
+        width: 450px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "testimonial1"
+        "testimonial2"
+        "testimonial3"
+        "testimonial4"
+        "sidebar"
+        
+         ;
+    }
+    
+    article {
+
+        padding: 2em 3em;
+        margin: 0 2.5em;
+    }
+
+    .testimonial1 {
+
+        background-size: 35%;
+        background-position-x: 90%;
+
+    }
+
+}
