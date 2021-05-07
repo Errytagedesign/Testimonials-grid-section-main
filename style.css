@@ -27,8 +27,7 @@
 
 .container {
 
-    width: 70%;
-    
+    width: 70%;    
     margin: 7em auto;
     display: grid;
     grid-gap: 2.5em;
@@ -198,8 +197,8 @@ h2 {
     
     article {
 
-        padding: 2em 3em;
-        margin: 0 2.5em;
+        padding: 2em 2em;
+        margin: 0 2em;
     }
 
     .testimonial1 {
@@ -207,6 +206,11 @@ h2 {
         background-size: 35%;
         background-position-x: 90%;
 
+    }
+
+    h2 {
+
+        font-size: 1.6rem;
     }
 
 }
